@@ -2,68 +2,36 @@
 <h3 align="center">🚀 Backend Engineer | Spring Boot | System Design</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=Backend+Engineer;Spring+Boot;REST+API+Designer;Clean+Architecture&center=true&width=500&height=50">
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=Backend+Engineer;Spring+Boot;System+Design;Scalable+APIs&center=true&width=500&height=50&color=00BFFF">
 </p>
 
 ---
 
 ## 🧠 About Me
 
-I build **production-grade backend systems**, not just CRUD apps.
+Backend engineer focused on building **production-grade systems**:
 
-* 🔐 Authentication (JWT + RBAC)
-* ⚡ Concurrency handling (locking strategies)
-* 💳 Payment systems (Stripe integration)
-* 🧠 Business rules & system design
-
----
-
-## 🔥 What Makes Me Different
-
-* I design systems with **real-world constraints**
-* I handle **race conditions & data consistency**
-* I implement **secure payment flows (idempotent)**
-* I focus on **scalable architecture**
+* 🔐 Authentication & Authorization (JWT, RBAC)
+* 💳 Payment Systems (Stripe, Idempotency)
+* ⚡ Concurrency & Data Consistency
+* 🧩 Clean Architecture & Scalable APIs
 
 ---
 
-## 🚀 Featured Projects
-
-### 🛒 E-Commerce Backend (Production-Level)
-
-👉 https://github.com/MahmoudYoussef-web/ecommerce-backend
-
-* Stripe Payment Integration (Webhooks)
-* Idempotent payment processing
-* Event-driven architecture
-* Variant-based product model
-
----
-
-### 🍽️ Reservation System (Concurrency-Safe)
-
-👉 https://github.com/MahmoudYoussef-web/restaurant-reservation-system
-
-* Pessimistic locking to prevent double booking
-* Time conflict detection (interval overlap logic)
-* Transactional consistency
-
----
-
-### 🗳️ Voting System (Business Rules Engine)
-
-👉 https://github.com/MahmoudYoussef-web/job-board
-
-* One vote per user enforcement
-* Time window validation
-* Role-based secure voting
-
----
-
-## ⚙️ Tech Stack
+## 💻 Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,spring,mysql,git,github,postman,maven" />
+  <img src="https://skillicons.dev/icons?i=java,spring,mysql,git,github,postman,maven,idea,vscode" />
+</p>
+
+---
+
+## 🧰 Tools & Technologies
+
+<p align="center">
+  <img src="https://techstack-generator.vercel.app/mysql-icon.svg" />
+  <img src="https://techstack-generator.vercel.app/github-icon.svg" />
+  <img src="https://techstack-generator.vercel.app/docker-icon.svg" />
 </p>
 
 ---
@@ -72,7 +40,23 @@ I build **production-grade backend systems**, not just CRUD apps.
 
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MahmoudYoussef-web&theme=tokyonight" />
-</p>>
+</p>
+
+---
+
+## 🔥 GitHub Streak
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=MahmoudYoussef-web&theme=tokyonight" />
+</p>
+
+---
+
+## 🏆 GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=MahmoudYoussef-web&theme=algolia" />
+</p>
 
 ---
 
@@ -90,4 +74,4 @@ I build **production-grade backend systems**, not just CRUD apps.
 
 ---
 
-⭐ I don't build simple apps — I build systems.
+⭐ I don’t just write code — I build systems.
