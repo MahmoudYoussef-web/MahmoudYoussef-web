@@ -73,7 +73,7 @@ I build **production-grade backend systems**, not just CRUD apps.
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=MahmoudYoussef-web&show_icons=true&theme=tokyonight&hide_border=true" />
 </p>
-
+![stats](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MahmoudYoussef-web&theme=tokyonight)
 ---
 
 ## 🎯 Current Focus
