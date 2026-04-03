@@ -42,7 +42,7 @@ Backend engineer focused on building **production-grade systems**:
   <img src="https://techstack-generator.vercel.app/github-icon.svg" width="60" />
   <img src="https://techstack-generator.vercel.app/docker-icon.svg" width="60" />
   <img src="https://techstack-generator.vercel.app/aws-icon.svg" width="60" />
-  <img src="https://techstack-generator.vercel.app/git-icon.svg" width="60" />
+  <img src="https://skillicons.dev/icons?i=git" height="60" />
 </p>
 
 ---
