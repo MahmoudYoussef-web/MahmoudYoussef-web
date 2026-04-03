@@ -17,28 +17,33 @@ Backend engineer focused on building **production-grade systems**:
 * 🧩 Clean Architecture & Scalable APIs
 
 ---
+
+## 🧠 Engineering Focus
+
+* Concurrency Control & Transaction Management  
+* Distributed Systems (Caching, Sharding, ID Generation)  
+* Business Rule Enforcement  
+* Secure Backend Design  
+
+---
+
 ## 💻 Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,spring,mysql,git,github,postman,maven,idea,vscode&perline=5" />
+  <img src="https://skillicons.dev/icons?i=java,spring,mysql,redis,git,github,postman,maven,idea&perline=5" />
 </p>
 
 ---
 
 ## 🧰 Tools & Technologies
 
-<<p align="center">
+<p align="center">
   <img src="https://techstack-generator.vercel.app/mysql-icon.svg" width="60" />
   <img src="https://techstack-generator.vercel.app/github-icon.svg" width="60" />
   <img src="https://techstack-generator.vercel.app/docker-icon.svg" width="60" />
   <img src="https://techstack-generator.vercel.app/aws-icon.svg" width="60" />
   <img src="https://techstack-generator.vercel.app/git-icon.svg" width="60" />
 </p>
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=idea,postman,redis,linux" />
-</p>
-
 
 ---
 
@@ -49,43 +54,27 @@ Backend engineer focused on building **production-grade systems**:
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=MahmoudYoussef-web&theme=tokyonight&utcOffset=2" height="150"/>
 </p>
 
-
 ---
 
 ## 📈 Top Languages
 
-![Top Langs](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MahmoudYoussef-web&theme=tokyonight)>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MahmoudYoussef-web&theme=tokyonight"/>
+</p>
 
 ---
-
-## 🏆 GitHub Overview
-
-![Profile](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MahmoudYoussef-web&theme=tokyonight)
-
----
-
-## 📊 Stats
-
-![Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=MahmoudYoussef-web&theme=tokyonight)
-
----
-
-## 📈 Productivity
-
-![Time](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=MahmoudYoussef-web&theme=tokyonight&utcOffset=2)
-
 
 ## 🎯 Current Focus
 
-* Advanced system design
-* Backend scalability
-* Preparing for backend interviews
+* Advanced System Design  
+* Backend Scalability  
+* Preparing for Backend Interviews  
 
 ---
 
 ## 📫 Contact Me
 
-* Email: (mahmoudyoussed29@gmail.com)
+* Email: mahmoudyoussed29@gmail.com  
 
 ---
 
