@@ -1,81 +1,86 @@
-<h1 align="center">Hi 👋, I'm Mahmoud Youssef</h1>
-<h3 align="center">🚀 Backend Engineer | Spring Boot | System Design</h3>
+<h1 align="center">Mahmoud Youssef</h1>
+<h3 align="center">Backend Engineer · Spring Boot · Distributed Systems</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?lines=Backend+Engineer;Spring+Boot;System+Design;Scalable+APIs&center=true&width=500&height=50&color=00BFFF">
+  <a href="https://www.linkedin.com/in/mahmoud-youssef-dev/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:mahmoudyoussed29@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
 </p>
 
 ---
 
-## 🧠 About Me
-
-Backend engineer focused on building **production-grade systems**:
-
-* 🔐 Authentication & Authorization (JWT, RBAC)
-* 💳 Payment Systems (Stripe, Idempotency)
-* ⚡ Concurrency & Data Consistency
-* 🧩 Clean Architecture & Scalable APIs
+Backend engineer focused on building **production-grade systems** — not CRUD apps.  
+I care about **concurrency**, **data consistency**, **failure handling**, and **clean domain modeling**.
 
 ---
 
-## 🧠 Engineering Focus
-
-* Concurrency Control & Transaction Management  
-* Distributed Systems (Caching, Sharding, ID Generation)  
-* Business Rule Enforcement  
-* Secure Backend Design  
-
----
-
-## 💻 Tech Stack
+## 🔧 Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,spring,mysql,redis,git,github,postman,maven,idea&perline=5" />
+  <img src="https://skillicons.dev/icons?i=java,spring,postgresql,mysql,redis,docker,git,github,maven,idea&perline=5" />
 </p>
 
----
-
-## 🧰 Tools & Technologies
-
-<p align="center">
-  <img src="https://techstack-generator.vercel.app/mysql-icon.svg" width="60" />
-  <img src="https://techstack-generator.vercel.app/github-icon.svg" width="60" />
-  <img src="https://techstack-generator.vercel.app/docker-icon.svg" width="60" />
-  <img src="https://techstack-generator.vercel.app/aws-icon.svg" width="60" />
-  <img src="https://skillicons.dev/icons?i=git" height="60" />
-</p>
+| Layer | Technologies |
+|---|---|
+| **Language & Framework** | Java 21 · Spring Boot 3 · Spring Security |
+| **Data** | PostgreSQL · MySQL · Spring Data JPA · Hibernate · Raw JDBC |
+| **Caching & Messaging** | Redis (Cache-Aside · Rate Limiting · Idempotency · ID Generation) |
+| **Security** | JWT · Refresh Token Rotation · RBAC · HMAC Webhook Verification |
+| **Payments** | Stripe Checkout · Webhook Ingestion |
+| **DevOps** | Docker · Docker Compose |
+| **Docs & Testing** | SpringDoc OpenAPI · JUnit 5 · Mockito |
 
 ---
 
-## 📊 GitHub Stats
+## 📌 Pinned Projects
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=MahmoudYoussef-web&theme=tokyonight" height="150"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=MahmoudYoussef-web&theme=tokyonight&utcOffset=2" height="150"/>
-</p>
+### [LogiBridge — Delivery Integration Platform](https://github.com/MahmoudYoussef-web/logibridge-backend)
+> Companies create delivery orders → delivery providers accept and fulfill them
 
----
+- JWT with **refresh token rotation** and reuse detection  
+- **Dual-layer idempotency** — DB-backed + Redis-backed  
+- **Pessimistic + optimistic locking** for concurrent order mutations  
+- Domain-driven **state machine** with enforced transitions  
+- Rate limiting per IP with atomic check-and-record  
 
-## 📈 Top Languages
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MahmoudYoussef-web&theme=tokyonight"/>
-</p>
+`Spring Boot` `PostgreSQL` `Redis` `Spring Security` `Docker`
 
 ---
 
-## 🎯 Current Focus
+### [URL Shortener — Distributed System Design](https://github.com/MahmoudYoussef-web/url-shortener-system)
+> Shorten URLs with sub-millisecond redirects and real-time click tracking
 
-* Advanced System Design  
-* Backend Scalability  
-* Preparing for Backend Interviews  
+- **Distributed ID generation** via Redis INCR + AtomicLong fallback  
+- **Deterministic sharding** (hashCode % N) — no routing table  
+- **Cache-aside pattern** with TTL derived from DB expiration  
+- **Atomic rate limiting** via Redis Lua script (no race conditions)  
+- Raw JDBC — no ORM, full control over query execution  
+
+`Spring Boot` `MySQL` `Redis` `Raw JDBC` `Docker`
 
 ---
 
-## 📫 Contact Me
+### [E-Commerce Backend — Full Commerce Lifecycle](https://github.com/MahmoudYoussef-web/ecommerce-backend)
+> Auth → Catalog → Cart → Orders → Stripe Payments → Inventory → Reporting
 
-* Email: mahmoudyoussed29@gmail.com  
+- **Stripe Checkout** with HMAC webhook verification  
+- **Event-driven inventory**: reservation on order → commit on payment  
+- **Scheduled cleanup** of expired reservations  
+- **Double-entry bookkeeping** with journal entries  
+- Multi-device session management with selective token revocation  
+
+`Spring Boot` `MySQL` `Redis` `Stripe` `MapStruct` `Docker`
 
 ---
 
-⭐ I don’t just write code — I build systems.
+## 🧠 What I Focus On
+
+```text
+Concurrency         →  Pessimistic locking, optimistic locking, atomic operations
+Consistency         →  Idempotency keys, state machines, transaction boundaries
+Failure Handling    →  Token reuse detection, retry safety, graceful degradation
+Security            →  JWT rotation, RBAC, rate limiting, webhook verification
+System Design       →  Sharding, caching strategies, distributed ID generation
