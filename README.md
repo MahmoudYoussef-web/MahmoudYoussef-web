@@ -59,6 +59,15 @@ I build reliable backend systems with a focus on **concurrency control**, **tran
 
 ---
 
+### 📊 Contribution Graph 3D
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-green.svg">
+  <img src="profile-3d-contrib/profile-green.svg" width="700px" alt="GitHub contribution graph in 3D" />
+</picture>
+
+---
+
 <div align="center">
 
 ### 🤝 Let's connect
