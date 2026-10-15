@@ -1,0 +1,56 @@
+﻿
+ mahmoud@github:~/Documents/portfolio$ fastfetch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                           mahmoud@github
+                                                                                           ──────────────
+
+                                                                                           Name          Mahmoud Youssef
+                                                                                           Role          Junior Backend Developer
+                                                                                           Focus         Backend Systems · REST APIs · Distributed Systems
+
+                                                                                           Languages     Java · Python · C++ · C · C# · JavaScript
+                                                                                           Stack         Spring Boot · Spring Security · JPA · Hibernate
+                                                                                           Data          PostgreSQL · MySQL · Redis
+                                                                                           Tools         Docker · Git · GitHub Actions · Maven
+
+                                                                                           Projects      WhatsApp API · BloodBridge · CalCounter
+                                                                                           More Projects AttendPro · Time-Table · URL Shortener
+
+                                                                                           Location      Cairo, Egypt (Open to Remote)
+
+                                                                                           GitHub        github.com/MahmoudYoussef-web
+                                                                                           LinkedIn      linkedin.com/in/mahmoud-youssef-ba30723bb
+                                                                                           Gmail         mahmoudyoussef29@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ mahmoud@github:~/Documents/portfolio$

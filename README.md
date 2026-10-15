@@ -57,6 +57,16 @@ I build reliable backend systems with a focus on **concurrency control**, **tran
 | **[Time-Table](https://github.com/MahmoudYoussef-web/Time-Table)** | University timetable generator producing PNG, PDF, and Excel outputs. | Spring Boot · Apache Batik · Flying Saucer |
 | **[URL Shortener](https://github.com/MahmoudYoussef-web/url-shortener-system)** | Lightweight URL shortening service. | Spring Boot · Redis |
 
+<!-- Banner data lives in asciifetch.toml [info.fields] and mirrors this table (CalCounter, not ReadSphere). Displayed file is fastfetch.png — do not delete it. -->
+<details>
+<summary>🛠️ Banner rebuild</summary>
+
+- Edit data in `asciifetch.toml` (`[info] fields`), then either push (runs `banner.yml` → rebuilds `fastfetch.svg/png/txt`) or build locally:
+- `pip install -r requirements.txt` then `asciifetch build --src headshot.jpg --out . --formats svg,png,txt`
+- `headshot.jpg` is git-ignored; CI needs it present to rebuild.
+
+</details>
+
 ---
 
 ### 📊 Contribution Graph 3D

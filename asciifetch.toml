@@ -1,0 +1,41 @@
+# asciifetch POC config — schema matches ganji759/asciifetch
+# ([identity] + [info.fields] + [image] + [palette])
+# Does not replace make-fastfetch-banner.py until a successful parallel build proves parity.
+
+[identity]
+user = "mahmoud@github"
+cwd = "~/Documents/portfolio"
+
+[info]
+fields = [
+  ["Name", "Mahmoud Youssef"],
+  ["Role", "Junior Backend Developer"],
+  ["Focus", "Backend Systems · REST APIs · Distributed Systems"],
+  [],
+  ["Languages", "Java · Python · C++ · C · C# · JavaScript"],
+  ["Stack", "Spring Boot · Spring Security · JPA · Hibernate"],
+  ["Data", "PostgreSQL · MySQL · Redis"],
+  ["Tools", "Docker · Git · GitHub Actions · Maven"],
+  [],
+  ["Projects", "WhatsApp API · BloodBridge · CalCounter"],
+  ["More Projects", "AttendPro · Time-Table · URL Shortener"],
+  [],
+  ["Location", "Cairo, Egypt (Open to Remote)"],
+  [],
+  ["GitHub", "github.com/MahmoudYoussef-web"],
+  ["LinkedIn", "linkedin.com/in/mahmoud-youssef-ba30723bb"],
+  ["Gmail", "mahmoudyoussef29@gmail.com"],
+]
+
+[image]
+src = "headshot.jpg"
+portrait_crop = "auto"
+
+[palette]
+bg = [15, 19, 23]
+bar = [27, 35, 43]
+line = [42, 52, 62]
+text = [233, 230, 223]
+muted = [152, 162, 171]
+accent = [236, 163, 95]
+green = [127, 168, 139]

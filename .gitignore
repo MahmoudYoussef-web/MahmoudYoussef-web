@@ -1,8 +1,19 @@
-# source photo and generator byproducts not embedded in the README
-headshot.jpg
+# Banner outputs ARE tracked (committed by banner.yml CI):
+# fastfetch.svg / fastfetch.png / fastfetch.txt must NOT be ignored.
+
+# Private/local-only: uncomment headshot.jpg below to keep your photo
+# out of the public repo (then build locally and commit only fastfetch.svg).
+# See asciifetch docs: public headshot.jpg is required for CI rebuild.
+# headshot.jpg
+headshot-pre.jpg
 avatar.jpg
 avatar-ascii.png
-fastfetch.txt
+
+# Stray/heavy files never tracked (see testing report: 16MB + 1.9MB):
+ascii-pic.png
+headshot.jpg.png
+portrait.png
+debug-*.png
 
 # python
 __pycache__/

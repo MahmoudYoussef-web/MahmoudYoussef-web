@@ -218,14 +218,14 @@ FIELDS = [
     ("Data",       "PostgreSQL · MySQL · Redis"),
     ("Tools",      "Docker · Git · GitHub Actions · Maven"),
     None,
-    ("Projects",   "WhatsApp API · BloodBridge · ReadSphere"),
+    ("Projects",   "WhatsApp API · BloodBridge · CalCounter"),
     ("More Projects", "AttendPro · Time-Table · URL Shortener"),
     None,
     ("Location",   "Cairo, Egypt (Open to Remote)"),
     None,
     ("GitHub",     "github.com/MahmoudYoussef-web"),
     ("LinkedIn",   "linkedin.com/in/mahmoud-youssef-ba30723bb"),
-    ("Gmail",      "mahmoudyoussed29@gmail.com"),
+    ("Gmail",      "mahmoudyoussef29@gmail.com"),
 ]
 
 # ---------------- palette: the portfolio's own tokens ----------------

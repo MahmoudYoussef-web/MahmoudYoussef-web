@@ -1,0 +1,36 @@
+name: Banner (asciifetch POC)
+
+# Parallel POC — modeled on ganji759/asciifetch examples.
+# Does not replace make-fastfetch-banner.py / preprocess-headshot.py.
+
+on:
+  push:
+    paths:
+      - asciifetch.toml
+      - headshot.jpg
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  banner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Render banner with asciifetch
+        uses: ganji759/asciifetch@v1
+        with:
+          config: asciifetch.toml
+          src: headshot.jpg
+          out: .
+          formats: svg,png,txt
+
+      - name: Commit & Push banner
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add fastfetch.svg fastfetch.png fastfetch.txt
+          git diff --cached --quiet || git commit -m "chore: regenerate asciifetch banner (POC)"
+          git push
