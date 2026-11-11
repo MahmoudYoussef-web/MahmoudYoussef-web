@@ -318,11 +318,14 @@ def activity(data):
             )
     cs = data["current_streak"]["length"]
     ls = data["longest_streak"]["length"]
+    day = lambda n: "day" if n == 1 else "days"
     if cs > 0:
-        streak_big, streak_note = f'{cs} <tspan font-style="italic">days</tspan>', f"current streak, longest {ls}"
+        streak_big = f'{cs} <tspan font-style="italic">{day(cs)}</tspan>'
+        streak_note = f"current streak, longest {ls}"
     else:
         # A zero is honest but reads as "nothing"; show the longest streak instead.
-        streak_big, streak_note = f'{ls} <tspan font-style="italic">days</tspan>', "longest streak, none running today"
+        streak_big = f'{ls} <tspan font-style="italic">{day(ls)}</tspan>'
+        streak_note = "longest streak, none running today"
     total_days = len(data["days"])
     stats = [
         (streak_big, streak_note),
