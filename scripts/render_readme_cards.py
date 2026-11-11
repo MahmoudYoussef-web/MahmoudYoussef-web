@@ -438,6 +438,55 @@ def heatmap(data):
                              f'Contribution graph: {data["total_contributions"]:,} contributions in the last year'))
 
 
+# ---- 6 · contact icons ---------------------------------------------------------
+# Four tiny standalone SVGs. GitHub strips <a> from inside an <img>, so each icon is
+# wrapped in its own <a> in README.md -- that is what makes it clickable.
+LINKEDIN = "https://linkedin.com/in/mahmoud-youssef-dev/"
+EMAIL = "mahmoudyoussed29@gmail.com"
+INSTAGRAM = "https://www.instagram.com/mmahmoud_youssef/"
+
+ICONS = {
+    "portfolio": (
+        "Portfolio",
+        f'<g transform="translate(12 12)" fill="none" stroke="{INK}" stroke-width="1.8" '
+        f'stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.6"/>'
+        f'<path d="M3.4 12h17.2"/><ellipse cx="12" cy="12" rx="4.1" ry="8.6"/></g>',
+    ),
+    "linkedin": (
+        "LinkedIn",
+        '<g transform="translate(12 12)"><circle cx="6.4" cy="6.1" r="1.9" fill="#0A66C2"/>'
+        '<rect x="4.7" y="9.2" width="3.4" height="10.2" rx=".6" fill="#0A66C2"/>'
+        '<path d="M10.4 9.2h3.2v1.5c.6-1 1.8-1.8 3.5-1.8 2.7 0 4.3 1.7 4.3 5v5.5h-3.3v-5'
+        'c0-1.5-.6-2.4-1.9-2.4-1.4 0-2.3 1-2.3 2.5v4.9h-3.5z" fill="#0A66C2"/></g>',
+    ),
+    "email": (
+        "Email",
+        '<g transform="translate(12 12)" fill="none" stroke="#EA4335" stroke-width="1.8" '
+        'stroke-linecap="round" stroke-linejoin="round"><rect x="3.2" y="6.2" width="17.6" '
+        'height="11.6" rx="2.2"/><path d="M3.6 7.6 12 13.4l8.4-5.8"/></g>',
+    ),
+    "instagram": (
+        "Instagram",
+        '<defs><linearGradient id="ig" x1="0" y1="0" x2="1" y2="1">'
+        '<stop offset="0" stop-color="#F9CE34"/><stop offset=".5" stop-color="#EE2A7B"/>'
+        '<stop offset="1" stop-color="#6228D7"/></linearGradient></defs>'
+        '<g transform="translate(12 12)" fill="none" stroke="url(#ig)" stroke-width="1.8" '
+        'stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="3.6" width="16.8" '
+        'height="16.8" rx="5"/><circle cx="12" cy="12" r="4.1"/>'
+        '<circle cx="17.1" cy="6.9" r="1.15" fill="url(#ig)" stroke="none"/></g>',
+    ),
+}
+
+
+def contact_icons():
+    for name, (label, glyph) in ICONS.items():
+        body = (
+            f'<rect x=".5" y=".5" width="47" height="47" rx="13" fill="{PAPER}" stroke="{RULE}"/>'
+            + glyph
+        )
+        write(f"icon-{name}.svg", svg(48, 48, body, [], f"{label} icon", bottom=0))
+
+
 if __name__ == "__main__":
     with open(DATA, encoding="utf-8") as fh:
         data = json.load(fh)
@@ -471,3 +520,4 @@ if __name__ == "__main__":
     section_title("What I'm", "building", "dark")
     section_title("What I'm", "building", "light")
     heatmap(data)
+    contact_icons()

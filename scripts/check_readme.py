@@ -67,6 +67,19 @@ images = re.findall(r'src="\./(cards/[^"]+\.svg)"', readme)
 missing = [p for p in images if not os.path.exists(os.path.join(ROOT, p))]
 check(bool(images) and not missing, f"all {len(images)} README card images exist (missing: {missing})")
 
+# 3b. the contact icons are clickable and point at the right places
+CONTACT = {
+    "icon-portfolio.svg": "https://mahmoud-youssef.vercel.app",
+    "icon-linkedin.svg": "https://linkedin.com/in/mahmoud-youssef-dev/",
+    "icon-email.svg": "mailto:mahmoudyoussed29@gmail.com",
+    "icon-instagram.svg": "https://www.instagram.com/mmahmoud_youssef/",
+}
+for icon, href in CONTACT.items():
+    check(
+        f'<a href="{href}"><img src="./cards/{icon}"' in readme,
+        f"{icon} is wrapped in a link to {href}",
+    )
+
 # 4. test data is self-consistent (the README now shows the card only, and the
 #    tests tile links to data/tests.json)
 tests = json.loads(read(os.path.join(ROOT, "data", "tests.json")))
