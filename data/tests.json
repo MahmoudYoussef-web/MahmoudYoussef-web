@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-11-11",
+  "note": "Verified test counts across five backend projects. This is not the total of all repositories.",
+  "projects": [
+    {
+      "name": "E-commerce Backend",
+      "repo": "ecommerce-backend",
+      "tests": 112,
+      "status": "verified",
+      "evidence": "Static scan of the remote default branch: 112 @Test methods across 30 test files."
+    },
+    {
+      "name": "WhatsApp Clone API",
+      "repo": "whatsapp-clone-realtime-api",
+      "tests": 84,
+      "status": "verified",
+      "evidence": "Static scan of the remote default branch: 84 @Test methods across 10 test files."
+    },
+    {
+      "name": "BloodBridge",
+      "repo": "bloodbridge-api",
+      "tests": 128,
+      "status": "verified",
+      "disputed_claim": 169,
+      "evidence": "mvn test on a fresh clone: 128 run, 0 failures, 0 errors, 1 skipped. The README claim of 169 is disputed."
+    },
+    {
+      "name": "Sofra",
+      "repo": "restaurant-reservation-system",
+      "tests": 79,
+      "status": "verified",
+      "evidence": "Static scan of the remote default branch: 79 @Test methods across 14 test files."
+    },
+    {
+      "name": "TaskFlow",
+      "repo": "TaskFlow",
+      "tests": 11,
+      "status": "verified",
+      "evidence": "Static scan of the remote default branch: 11 @Test methods (7 unit + 4 integration, counted once)."
+    }
+  ],
+  "total": 414
+}

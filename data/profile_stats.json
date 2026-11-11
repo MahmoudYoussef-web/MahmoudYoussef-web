@@ -1,0 +1,116 @@
+{
+  "username": "MahmoudYoussef-web",
+  "generated_at": "2026-11-11T12:04:11Z",
+  "public_repos": 15,
+  "owned_repos": 15,
+  "stars": 10,
+  "followers": 4,
+  "following": 0,
+  "repos": [
+    {
+      "name": "calorie-tracker-backend",
+      "stars": 3,
+      "fork": false,
+      "language": "Java",
+      "archived": false
+    },
+    {
+      "name": "ecommerce-backend",
+      "stars": 3,
+      "fork": false,
+      "language": "Java",
+      "archived": false
+    },
+    {
+      "name": "attendance-management-api",
+      "stars": 1,
+      "fork": false,
+      "language": "Java",
+      "archived": false
+    },
+    {
+      "name": "bloodbridge-api",
+      "stars": 1,
+      "fork": false,
+      "language": "Java",
+      "archived": false
+    },
+    {
+      "name": "logibridge-backend",
+      "stars": 1,
+      "fork": false,
+      "language": "Java",
+      "archived": false
+    },
+    {
+      "name": "url-shortener-system",
+      "stars": 1,
+      "fork": false,
+      "language": "Java",
+      "archived": false
+    },
+    {
+      "name": "MahmoudYoussef-web",
+      "stars": 0,
+      "fork": false,
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "name": "TaskFlow",
+      "stars": 0,
+      "fork": false,
+      "language": "Java",
+      "archived": false
+    },
+    {
+      "name": "Time-Table",
+      "stars": 0,
+      "fork": false,
+      "language": "Java",
+      "archived": false
+    },
+    {
+      "name": "codealpha_tasks",
+      "stars": 0,
+      "fork": false,
+      "language": "Java",
+      "archived": false
+    },
+    {
+      "name": "job-board",
+      "stars": 0,
+      "fork": false,
+      "language": "Java",
+      "archived": false
+    },
+    {
+      "name": "portfolio-",
+      "stars": 0,
+      "fork": false,
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "name": "quantum-radar-admin",
+      "stars": 0,
+      "fork": false,
+      "language": "Java",
+      "archived": false
+    },
+    {
+      "name": "restaurant-reservation-system",
+      "stars": 0,
+      "fork": false,
+      "language": "Java",
+      "archived": false
+    },
+    {
+      "name": "whatsapp-clone-realtime-api",
+      "stars": 0,
+      "fork": false,
+      "language": "Java",
+      "archived": false
+    }
+  ]
+}

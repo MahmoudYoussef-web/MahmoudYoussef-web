@@ -1,0 +1,54 @@
+name: Update profile art
+
+# Refreshes data/contributions.json, data/profile_stats.json and every SVG in cards/
+# from live GitHub data. Runs daily, on demand, and on every push to main.
+#
+# The generated numbers are never hardcoded: the cards and the README both read
+# data/profile_stats.json and data/tests.json, so a number can only come from one place.
+# If a fetch fails, the job fails and nothing is committed -- better a stale card than
+# a wrong one.
+
+"on":
+  schedule:
+    - cron: "17 6 * * *"   # ~06:17 UTC every day
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-art
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    env:
+      GH_PROFILE_USER: MahmoudYoussef-web
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch daily contributions (public endpoint)
+        run: python scripts/fetch_contributions.py
+
+      - name: Fetch profile stats (authenticated REST API)
+        run: python scripts/fetch_profile_stats.py
+
+      - name: Render cards
+        run: python scripts/render_readme_cards.py
+
+      - name: Commit updated art
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh profile cards [skip ci]"
+          file_pattern: "data/contributions.json data/profile_stats.json cards/*.svg"

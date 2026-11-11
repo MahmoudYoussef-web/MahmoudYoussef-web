@@ -18,3 +18,8 @@ debug-*.png
 # python
 __pycache__/
 .venv
+
+# Portrait pipeline inputs/outputs. Only the finished mahmoud-ascii.svg and the
+# generated cards/ are tracked; the raw photo and the prepped grayscale stay local.
+source-photo.*
+source-prepped.png
