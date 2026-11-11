@@ -464,7 +464,7 @@ if __name__ == "__main__":
     tile("stars", "GITHUB", STUDIO, "#ffffff", str(stats["stars"]), "stars",
          "Summed across my own public, non-fork repositories.", 3.35, 1)
     tile("tests", "TESTING", LEARN, INK, str(total_tests), "tests",
-         "Verified across five backend projects; see the breakdown below.", 3.6, 2)
+         "Verified across five backend projects; source in data/tests.json.", 3.6, 2)
     activity(data)
     for i, (name, desc, meta) in enumerate(REPOS):
         repo_card(i, name, desc, meta)

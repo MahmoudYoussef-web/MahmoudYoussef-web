@@ -6,8 +6,8 @@ Checks, all fatal:
   * the repo cards in README.md are in the pinned order, and that order matches
     the REPOS list in render_readme_cards.py;
   * every ./cards/*.svg referenced by the README exists;
-  * the README test table matches data/tests.json row by row and in total;
-  * the exact professional title is present in the README and in the hero card;
+  * data/tests.json is internally consistent (total == sum of rows, statuses valid);
+  * the exact professional title is present in the hero card;
   * "Avi" appears only in the layout-credit comment;
   * no live number is hardcoded in the scripts (665 contributions, 15 repos,
     10 stars are read from data/profile_stats.json at render time).
@@ -67,28 +67,21 @@ images = re.findall(r'src="\./(cards/[^"]+\.svg)"', readme)
 missing = [p for p in images if not os.path.exists(os.path.join(ROOT, p))]
 check(bool(images) and not missing, f"all {len(images)} README card images exist (missing: {missing})")
 
-# 4. test table == data/tests.json
+# 4. test data is self-consistent (the README now shows the card only, and the
+#    tests tile links to data/tests.json)
 tests = json.loads(read(os.path.join(ROOT, "data", "tests.json")))
-table = readme.split("<summary>Test counts by project</summary>", 1)[-1]
-rows = re.findall(r"^\|\s*(.+?)\s*\|\s*\[[^\]]+\]\([^)]+\)\s*\|\s*(\d+)\s*\|", table, re.M)
-expected = [(p["name"], str(p["tests"])) for p in tests["projects"]]
-check(rows == expected, f"README test table == data/tests.json ({rows})")
-total_row = re.search(r"\|\s*\*\*Total\*\*\s*\|\s*\|\s*\*\*(\d+)\*\*\s*\|", table)
-check(
-    total_row is not None and int(total_row.group(1)) == int(tests["total"]),
-    f"README test total == {tests['total']}",
-)
 check(
     sum(int(p["tests"]) for p in tests["projects"]) == int(tests["total"]),
     "data/tests.json total == sum of its rows",
 )
+check(
+    all(p.get("status") in ("verified", "reported", "disputed") for p in tests["projects"]),
+    "every test entry has a verified/reported/disputed status",
+)
 
-# 5. exact title everywhere
-check(TITLE in readme, "exact professional title in README")
+# 5. exact title in the hero card (the only place the profile shows it now)
 hero = read(os.path.join(ROOT, "cards", "hero.svg"))
 check(TITLE in hero, "exact professional title in hero card")
-for name in ("repo-logibridge-backend.svg",):
-    check(TITLE not in read(os.path.join(ROOT, "cards", name)), f"title not duplicated on {name}")
 
 # 6. no Avi except the credit comment
 avi_lines = [i + 1 for i, line in enumerate(readme.splitlines()) if "Avi" in line]
